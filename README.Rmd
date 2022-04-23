@@ -32,7 +32,7 @@ the causal DAG.
 You can install the development version of causalsim like so:
 
 ``` r
-remotes::install.github("gmonette/causalsim)
+remotes::install_github("gmonette/causalsim")
 ```
 
 ## Example
@@ -52,7 +52,7 @@ in a causal analysis. The variables included here are:
 The DAG to be studied here is:
 
 <!-- # why isn't this found? -->
-<!-- ![]("man/figures/coefx-ex-dag.png") -->
+![](man/figures/coefx-ex-dag.png){width="60%"}
 
 
 
