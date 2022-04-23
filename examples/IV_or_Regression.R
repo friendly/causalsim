@@ -47,7 +47,7 @@ knitr::opts_chunk$set(
   include=TRUE,
   comment = '  '
 )
-#- setup, include=FALSE 
+#- setup2, include=FALSE 
 knitr::opts_chunk$set(comment='     ')
 library(causalsim)
 #'
