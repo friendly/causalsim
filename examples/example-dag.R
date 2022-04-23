@@ -84,7 +84,7 @@ ggdag(example_dag)
 
 
 # specify the paths
-paths <- dagify(
+example_dag <- dagify(
 	Y ~ X + M + C + Zr,
 	M ~ X,
 	X ~ Zl + I,
@@ -94,12 +94,14 @@ paths <- dagify(
 	outcome = "Y"
 )
 
-ggdag(paths)
+ggdag(example_dag)
 
 # create tidy DAG
-paths |>
+example_dag |>
   tidy_dagitty() |>
   # Set Node Status
   node_status() |>
   # Set node adjacency
   node_ancestors(.var = "Y")
+
+orientDag::dagitty_to_adjmatrix(example_dag)
