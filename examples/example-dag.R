@@ -104,4 +104,7 @@ example_dag |>
   # Set node adjacency
   node_ancestors(.var = "Y")
 
-orientDag::dagitty_to_adjmatrix(example_dag)
+#remotes::install_github("IyarLin/orientDAG")
+
+library(orientDAG)
+orientDAG::dagitty_to_adjmatrix(example_dag)
